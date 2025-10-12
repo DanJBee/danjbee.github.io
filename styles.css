@@ -11,6 +11,8 @@
     --marvel-rivals-color: #e11d48;
     --valorant-color: #ef4444;
     --apex-legends-color: #d97706;
+    --overwatch-color: #f59e0b;
+    --rocket-league-color: #3b82f6;
     
     /* Other variables */
     --card-bg-color: #1a1a1a;
@@ -227,6 +229,14 @@ section h2 {
     border-top: 4px solid var(--apex-legends-color);
 }
 
+.overwatch .portfolio-content {
+    border-top: 4px solid var(--overwatch-color);
+}
+
+.rocket-league .portfolio-content {
+    border-top: 4px solid var(--rocket-league-color);
+}
+
 .marvel-rivals .game-tag {
     background-color: var(--marvel-rivals-color);
 }
@@ -237,6 +247,14 @@ section h2 {
 
 .apex-legends .game-tag {
     background-color: var(--apex-legends-color);
+}
+
+.overwatch .game-tag {
+    background-color: var(--overwatch-color);
+}
+
+.rocket-league .game-tag {
+    background-color: var(--rocket-league-color);
 }
 
 /* Contact Section */
