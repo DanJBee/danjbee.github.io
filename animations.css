@@ -78,3 +78,15 @@
 .js-animation-ready .contact-card:nth-child(7) {
     transition-delay: 0.7s;
 }
+
+.js-animation-ready .expertise-card:nth-child(8),
+.js-animation-ready .portfolio-item:nth-child(8),
+.js-animation-ready .contact-card:nth-child(8) {
+    transition-delay: 0.8s;
+}
+
+.js-animation-ready .expertise-card:nth-child(9),
+.js-animation-ready .portfolio-item:nth-child(9),
+.js-animation-ready .contact-card:nth-child(9) {
+    transition-delay: 0.9s;
+}
