@@ -1,387 +1,398 @@
 /* Base Styles */
 :root {
-	/* Main colors */
-	--primary-color: #6b21a8;
-	--secondary-color: #2f2f2f;
-	--background-color: #0f0f0f;
-	--text-color: #ffffff;
-	--accent-color: #9333ea;
-
-	/* Game-specific colors */
-	--marvel-rivals-color: #e11d48;
-	--valorant-color: #ef4444;
-	--apex-legends-color: #d97706;
-	--overwatch-color: #f59e0b;
-	--rocket-league-color: #3b82f6;
-	--league-of-legends-color: #10b981;
-
-	/* Other variables */
-	--card-bg-color: #1a1a1a;
-	--header-height: 90vh;
-	--section-padding: 5rem 0;
-	--border-radius: 8px;
+    /* Main colors */
+    --primary-color: #6b21a8;
+    --secondary-color: #2f2f2f;
+    --background-color: #0f0f0f;
+    --text-color: #ffffff;
+    --accent-color: #9333ea;
+    
+    /* Game-specific colors */
+    --marvel-rivals-color: #e11d48;
+    --valorant-color: #ef4444;
+    --apex-legends-color: #d97706;
+    --overwatch-color: #f59e0b;
+    --rocket-league-color: #3b82f6;
+    --rainbow-six-color: #8b5cf6;
+    
+    /* Other variables */
+    --card-bg-color: #1a1a1a;
+    --header-height: 90vh;
+    --section-padding: 5rem 0;
+    --border-radius: 8px;
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-	font-family: "Poppins", sans-serif;
-	background-color: var(--background-color);
-	color: var(--text-color);
-	line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-weight: 600;
-	line-height: 1.3;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 a {
-	text-decoration: none;
-	color: inherit;
-	transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
 }
 
 .btn {
-	display: inline-block;
-	padding: 0.8rem 1.5rem;
-	border-radius: var(--border-radius);
-	font-weight: 500;
-	transition: all 0.3s ease;
-	cursor: pointer;
-	letter-spacing: 0.5px;
-	text-align: center;
-	background-color: var(--primary-color);
-	color: white;
-	border: 1px solid var(--primary-color);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-	background-color: var(--accent-color);
-	border-color: var(--accent-color);
-	transform: translateY(-3px);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Header Styles */
 header {
-	height: var(--header-height);
-	display: flex;
-	align-items: center;
-	background: linear-gradient(135deg, #0f0f0f 0%, #6b21a8 50%, #9333ea 100%);
-	position: relative;
-	overflow: hidden;
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0f0f0f 0%, #6b21a8 50%, #9333ea 100%);
+    position: relative;
+    overflow: hidden;
 }
 
 .header-content {
-	max-width: 800px;
-	position: relative;
-	z-index: 2;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
 }
 
 .header-content h1 {
-	font-size: 3.5rem;
-	margin-bottom: 1rem;
-	color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: white;
 }
 
 .header-content p {
-	font-size: 1.2rem;
-	margin-bottom: 2rem;
-	color: rgba(255, 255, 255, 0.9);
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .header-buttons {
-	display: flex;
-	gap: 1.5rem;
-	margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
 }
 
 /* Section Styles */
 section {
-	padding: var(--section-padding);
+    padding: var(--section-padding);
 }
 
 section h2 {
-	font-size: 2.5rem;
-	margin-bottom: 1rem;
-	text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .section-intro {
-	text-align: center;
-	max-width: 700px;
-	margin: 0 auto 3rem;
-	color: rgba(255, 255, 255, 0.8);
-	font-size: 1.1rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
 }
 
 /* Expertise Section */
 .expertise-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .expertise-card {
-	background-color: var(--card-bg-color);
-	padding: 2rem;
-	border-radius: var(--border-radius);
-	text-align: center;
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .expertise-card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .expertise-icon {
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
 }
 
 .expertise-card h3 {
-	margin-bottom: 1rem;
-	font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 /* Portfolio Section */
 .portfolio-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
 }
 
 .portfolio-item {
-	border-radius: var(--border-radius);
-	overflow: hidden;
-	position: relative;
-	height: 100%;
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-item:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
 
 .portfolio-content {
-	background-color: var(--card-bg-color);
-	padding: 2rem;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio-content h3 {
-	font-size: 1.3rem;
-	margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio-tags {
-	display: flex;
-	gap: 0.5rem;
-	margin-bottom: 1rem;
-	flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
 }
 
 .game-tag {
-	padding: 0.3rem 0.6rem;
-	border-radius: 20px;
-	font-size: 0.8rem;
-	font-weight: 500;
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .year-tag {
-	padding: 0.3rem 0.6rem;
-	border-radius: 20px;
-	font-size: 0.8rem;
-	font-weight: 500;
-	background-color: var(--secondary-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: var(--secondary-color);
 }
 
 /* Game-specific colors */
 .marvel-rivals .portfolio-content {
-	border-top: 4px solid var(--marvel-rivals-color);
+    border-top: 4px solid var(--marvel-rivals-color);
 }
 
 .valorant .portfolio-content {
-	border-top: 4px solid var(--valorant-color);
+    border-top: 4px solid var(--valorant-color);
 }
 
 .apex-legends .portfolio-content {
-	border-top: 4px solid var(--apex-legends-color);
+    border-top: 4px solid var(--apex-legends-color);
 }
 
 .overwatch .portfolio-content {
-	border-top: 4px solid var(--overwatch-color);
+    border-top: 4px solid var(--overwatch-color);
 }
 
 .rocket-league .portfolio-content {
-	border-top: 4px solid var(--rocket-league-color);
+    border-top: 4px solid var(--rocket-league-color);
 }
 
-.league-of-legends .portfolio-content {
-	border-top: 4px solid var(--league-of-legends-color);
+.rainbow-six .portfolio-content {
+    border-top: 4px solid var(--rainbow-six-color);
 }
 
 .marvel-rivals .game-tag {
-	background-color: var(--marvel-rivals-color);
+    background-color: var(--marvel-rivals-color);
 }
 
 .valorant .game-tag {
-	background-color: var(--valorant-color);
+    background-color: var(--valorant-color);
 }
 
 .apex-legends .game-tag {
-	background-color: var(--apex-legends-color);
+    background-color: var(--apex-legends-color);
 }
 
 .overwatch .game-tag {
-	background-color: var(--overwatch-color);
+    background-color: var(--overwatch-color);
 }
 
 .rocket-league .game-tag {
-	background-color: var(--rocket-league-color);
+    background-color: var(--rocket-league-color);
 }
 
-.league-of-legends .game-tag {
-	background-color: var(--league-of-legends-color);
+.rainbow-six .game-tag {
+    background-color: var(--rainbow-six-color);
+}
+
+/* Featured/Special portfolio item */
+.portfolio-item.featured {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(107, 33, 168, 0.1) 100%);
+    border: 2px solid var(--rainbow-six-color);
+}
+
+.portfolio-item.featured .portfolio-content {
+    border-top: 4px solid var(--rainbow-six-color);
+    background: linear-gradient(to bottom, rgba(139, 92, 246, 0.05) 0%, transparent 100%);
+}
+
+.portfolio-item.featured:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(139, 92, 246, 0.3);
 }
 
 /* Contact Section */
 .contact-section {
-	background-color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 .contact-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
 }
 
 .contact-card {
-	background-color: var(--card-bg-color);
-	padding: 2rem;
-	border-radius: var(--border-radius);
-	text-align: center;
-	transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--card-bg-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-card:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-icon {
-	font-size: 2.5rem;
-	margin-bottom: 1.5rem;
-	color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
 }
 
 .contact-card h3 {
-	margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .contact-card p {
-	margin-bottom: 1rem;
-	color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .response-time {
-	font-size: 0.8rem;
-	color: var(--primary-color) !important;
-	font-style: italic;
+    font-size: 0.8rem;
+    color: var(--primary-color) !important;
+    font-style: italic;
 }
 
 .contact-link {
-	display: inline-block;
-	color: var(--primary-color);
-	font-weight: 500;
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .contact-link:hover {
-	color: var(--accent-color);
-	text-decoration: underline;
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 /* Footer Styles */
 footer {
-	background-color: var(--card-bg-color);
-	padding: 2rem 0;
-	text-align: center;
+    background-color: var(--card-bg-color);
+    padding: 2rem 0;
+    text-align: center;
 }
 
 .footer-content p {
-	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
 }
 
 .credit {
-	margin-top: 1rem;
-	font-size: 0.9rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 .credit a {
-	color: var(--primary-color);
-	font-weight: 500;
-	transition: color 0.2s ease;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: color 0.2s ease;
 }
 
 .credit a:hover {
-	color: var(--accent-color);
-	text-decoration: underline;
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-	.header-content h1 {
-		font-size: 2.5rem;
-	}
-
-	section h2 {
-		font-size: 2rem;
-	}
-
-	.header-buttons {
-		flex-direction: column;
-	}
-
-	.btn {
-		width: 100%;
-		text-align: center;
-		margin-bottom: 1rem;
-	}
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
-	.header-content h1 {
-		font-size: 2rem;
-	}
-
-	.section-intro {
-		font-size: 1rem;
-	}
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .section-intro {
+        font-size: 1rem;
+    }
 }
