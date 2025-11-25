@@ -110,3 +110,31 @@
 .js-animation-ready .portfolio-item:nth-child(14) {
     transition-delay: 1.4s;
 }
+
+.js-animation-ready .portfolio-item:nth-child(15) {
+    transition-delay: 1.5s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(16) {
+    transition-delay: 1.6s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(17) {
+    transition-delay: 1.7s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(18) {
+    transition-delay: 1.8s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(12) {
+    transition-delay: 1.2s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(13) {
+    transition-delay: 1.3s;
+}
+
+.js-animation-ready .portfolio-item:nth-child(14) {
+    transition-delay: 1.4s;
+}

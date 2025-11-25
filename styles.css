@@ -14,6 +14,7 @@
     --overwatch-color: #f59e0b;
     --rocket-league-color: #3b82f6;
     --rainbow-six-color: #8b5cf6;
+    --league-of-legends-color: #10b981;
     
     /* Other variables */
     --card-bg-color: #1a1a1a;
@@ -242,6 +243,10 @@ section h2 {
     border-top: 4px solid var(--rainbow-six-color);
 }
 
+.league-of-legends .portfolio-content {
+    border-top: 4px solid var(--league-of-legends-color);
+}
+
 .marvel-rivals .game-tag {
     background-color: var(--marvel-rivals-color);
 }
@@ -264,6 +269,10 @@ section h2 {
 
 .rainbow-six .game-tag {
     background-color: var(--rainbow-six-color);
+}
+
+.league-of-legends .game-tag {
+    background-color: var(--league-of-legends-color);
 }
 
 /* Featured/Special portfolio item */
