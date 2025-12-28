@@ -127,6 +127,10 @@
     transition-delay: 1.8s;
 }
 
+.js-animation-ready .portfolio-item:nth-child(19) {
+    transition-delay: 1.9s;
+}
+
 .js-animation-ready .portfolio-item:nth-child(12) {
     transition-delay: 1.2s;
 }
