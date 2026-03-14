@@ -24,6 +24,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add scroll animation for elements
     const revealElements = document.querySelectorAll('.expertise-card, .portfolio-item, .contact-card');
+
+    // Assign staggered delays per grid so reveal order remains stable as cards change.
+    const staggerConfig = [
+        { grid: '.expertise-grid', card: '.expertise-card' },
+        { grid: '.portfolio-grid', card: '.portfolio-item' },
+        { grid: '.contact-grid', card: '.contact-card' }
+    ];
+
+    const delayStep = 0.08;
+    const maxDelay = 0.64;
+
+    staggerConfig.forEach(({ grid, card }) => {
+        const gridElement = document.querySelector(grid);
+
+        if (!gridElement) {
+            return;
+        }
+
+        const cards = gridElement.querySelectorAll(card);
+        cards.forEach((element, index) => {
+            const delay = Math.min(index * delayStep, maxDelay);
+            element.style.setProperty('--reveal-delay', `${delay.toFixed(2)}s`);
+        });
+    });
     
     function checkScroll() {
         const windowHeight = window.innerHeight;
